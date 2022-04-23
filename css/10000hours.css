@@ -195,8 +195,47 @@ footer {
     top: calc(50% + 960px);
     transform: translate(-50%, -50%);
     width: 800px;
-    height: 800px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 76px;
+    color: var(--purple);
+    font-family: OTEnjoystoriesBA;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106px;
+}
+
+.modal-sub-title {
+    text-align: center;
+    margin-top: 4px;
+    color: var(--purple);
+    font-family: OTEnjoystoriesBA;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.modal img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+.go-training {
+    display: block;
+    margin: 74px auto 68px;
+    padding: 21px 49px;
+    background-color: var(--yellow);
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
 }

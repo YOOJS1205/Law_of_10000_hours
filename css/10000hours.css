@@ -180,3 +180,23 @@ html {
 footer {
     margin-top: 136px;
 }
+
+.copyright {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 20px 0  80px;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 960px);
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}

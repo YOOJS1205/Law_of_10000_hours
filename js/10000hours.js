@@ -4,6 +4,8 @@ const ToBeInput = document.querySelector('.tobe-input');
 const TimeInput = document.querySelector('.time-input');
 const TimeResult = document.querySelector('.time');
 const ToBeResult = document.querySelector('.tobe-content');
+const GoButton = document.querySelector('.go');
+const Modal = document.querySelector('.modal');
 
 var toBe = '';
 var time = 0;
@@ -21,3 +23,8 @@ StartButton.addEventListener('click', () => {
     TimeResult.innerText = Math.round(10000 / time);
     ToBeResult.innerText = toBe;
 });
+
+GoButton.addEventListener('click', () => {
+    Modal.classList.remove('hidden');
+    console.log(window.scrollY)
+})

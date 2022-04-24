@@ -23,15 +23,14 @@
                 어떤 분야의 전문가가 되기 위해서는<br>
                 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
-            <!-- 후에 label 태그 넣기 -->
-            <!-- 레티나 디스플레이 고려한 이미지 넣기 -->
-            <!-- IR 기법 고려하기 -->
             <div class="text">
                 <p class="goal">
-                    나는<input class="tobe-input" type="text" placeholder="예)프로그래밍" size="10">전문가가 될 것이다.
+                    <label for="tobe" class="ir">목표</label>
+                    나는<input class="tobe-input" type="text" placeholder="예)프로그래밍" size="10" id="tobe">전문가가 될 것이다.
                 </p>
                 <p class="how-much">
-                    그래서 앞으로 매일 하루에<input type="number" class="time-input" placeholder="예)5시간">시간씩 훈련할 것이다.
+                    <label for="time" class="ir">훈련시간</label>
+                    그래서 앞으로 매일 하루에<input type="text" class="time-input" placeholder="예)5시간" size="10" id="time">시간씩 훈련할 것이다.
                 </p>
             </div>
             <button class="start" type="button">
@@ -40,7 +39,7 @@
             <div class="result hidden">
                 <p class="tobe">
                     당신은
-                    <strong class="tobe-content">프로그래밍</strong>
+                    <strong class="tobe-content"></strong>
                     전문가가 되기 위해서
                 </p>
                 <p class="day">

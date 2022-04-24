@@ -35,6 +35,18 @@
     --white: #ffffff;
 }
 
+.ir {
+    display:block;
+    overflow:hidden;
+    Font-size:1px;
+    line-height:0;
+    text-indent:-9999px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 button {
     cursor: pointer;
 }
@@ -122,15 +134,18 @@ html {
     font-size: 2.4rem;
     color: #babcbe;
     padding: 17px 41px 16px 39px;
-    margin: 0 17px;
 }
 
-.how-much {
-    margin-top: 27px;
+.tobe-input {
+    margin: 0 17px 13px;
+}
+
+.time-input {
+    margin: 14px 17px 15px;
 }
 
 .start {
-    margin-top: 115px;
+    margin-top: 100px;
     background-color: var(--yellow);
     color: var(--purple);
     font-size: 2.4rem;
@@ -240,12 +255,33 @@ footer {
 }
 
 @media screen and (max-width: 360px) {
-    .container {
-        width: 100%;
+    .tit {
+        margin-top: 50px;
     }
-    .tit-text,
+
+    .tit-clock {
+        width: 106px;
+    }
+
+    .tit-text {
+        width: 267px;
+        height: 53px;
+        top: 25px;
+    }
+
+    .sub-title {
+        margin-top: 40px;
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+
     .explain {
-        width: 100%;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        background-position: 0 25px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-top: 62px;
     }
 
     .explain,
@@ -253,10 +289,25 @@ footer {
         font-size: 1.4rem;
     }
 
-    .sub-title {
-        font-size: 2.2rem;
-        line-height: 2.4rem;
+    .text {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
     }
+
+    .text input {
+        font-size: 1.4rem;
+        padding: 12px 35px 11px;
+        margin: 17px 4px;
+    }
+
+    .tobe-input {
+        margin-bottom: 17px;
+    }
+
+    .time-input {
+        margin-top: 19px;
+    }
+
     .modal {
         width: 330px;
         height: 500px;
@@ -266,7 +317,68 @@ footer {
         border-radius: 13px;
         padding: 19px 36.5px 17px;
         font-size: 1.4rem;
-        line-height: 1.4rem;
+        line-height: 1.6rem;
         margin-top: 49px;
+        width: 241px;
+    }
+
+    .tobe,
+    .day {
+        font-size: 1.4rem;
+    }
+
+    .result strong{
+        font-size: 2.4rem;
+    }
+
+    .result {
+        margin-top: 64px;
+        line-height: 2.4rem;
+    }
+
+    .menu {
+        margin-top: 55px;
+    }
+
+    .menu button {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 13.5px 17.5px 12.5px;
+        border: none;
+    }
+
+    footer {
+        margin-top: 83px;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        font-weight: 400;
+    }
+
+    .modal {
+        top: calc(50% + 264.66px);
+    }
+
+    .modal-title {
+        font-size: 6.4rem;
+        line-height: 7.0rem;
+        margin-top: 40px;
+    }
+
+    .modal img {
+        display: none;
+    }
+
+    .go-training {
+        display: block;
+        width: 241px;
+        padding: 19px 45px 17px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        border-radius: 13px;
+        margin: 246px auto 40px;
+        border: none;
     }
 }

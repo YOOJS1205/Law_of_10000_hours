@@ -27,8 +27,10 @@ StartButton.addEventListener('click', () => {
 
 GoButton.addEventListener('click', () => {
     Modal.classList.toggle('hidden');
+    document.body.classList.toggle('no-scroll');
 })
 
 GoTraining.addEventListener('click', () => {
     Modal.classList.toggle('hidden');
+    document.body.classList.toggle('no-scroll');
 })

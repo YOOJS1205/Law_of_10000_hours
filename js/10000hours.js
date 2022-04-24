@@ -6,6 +6,7 @@ const TimeResult = document.querySelector('.time');
 const ToBeResult = document.querySelector('.tobe-content');
 const GoButton = document.querySelector('.go');
 const Modal = document.querySelector('.modal');
+const GoTraining = document.querySelector('.go-training');
 
 var toBe = '';
 var time = 0;
@@ -25,6 +26,9 @@ StartButton.addEventListener('click', () => {
 });
 
 GoButton.addEventListener('click', () => {
-    Modal.classList.remove('hidden');
-    console.log(window.scrollY)
+    Modal.classList.toggle('hidden');
+})
+
+GoTraining.addEventListener('click', () => {
+    Modal.classList.toggle('hidden');
 })

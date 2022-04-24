@@ -59,7 +59,6 @@ html {
 
 .container {
     text-align: center;
-    width: 80%;
 }
 
 .tit {
@@ -238,4 +237,36 @@ footer {
     font-size: 24px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 56px;
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+    }
+    .tit-text,
+    .explain {
+        width: 100%;
+    }
+
+    .explain,
+    .explain strong {
+        font-size: 1.4rem;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+    .modal {
+        width: 330px;
+        height: 500px;
+    }
+
+    .start {
+        border-radius: 13px;
+        padding: 19px 36.5px 17px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        margin-top: 49px;
+    }
 }
